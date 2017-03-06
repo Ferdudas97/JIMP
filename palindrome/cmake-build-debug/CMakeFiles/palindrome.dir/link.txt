@@ -1,0 +1,1 @@
+/usr/bin/c++   -g   CMakeFiles/palindrome.dir/Palindrome.o CMakeFiles/palindrome.dir/main.o  -o palindrome -rdynamic liblibpalindrome.a 

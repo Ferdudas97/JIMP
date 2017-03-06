@@ -1,0 +1,4 @@
+/home/radek/clion/exercises/lab1/palindrome/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/radek/clion/exercises/lab1/palindrome/cmake-build-debug/CMakeFiles/palindrome.dir
+/home/radek/clion/exercises/lab1/palindrome/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/radek/clion/exercises/lab1/palindrome/cmake-build-debug/CMakeFiles/libpalindrome.dir
