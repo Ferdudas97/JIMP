@@ -1,13 +1,14 @@
 //
-// Created by adrian on 02.05.2017.
+// Created by Radek on 02.05.2017.
 //
+
 #ifndef JIMP_EXERCISES_MOVIESUBTITLES_H
 #define JIMP_EXERCISES_MOVIESUBTITLES_H
 
 #include <sstream>
 #include <vector>
 
-using namespace std;
+using  namespace std;
 namespace moviesubs {
     class MovieSubtitles {
     public:
@@ -28,7 +29,7 @@ namespace moviesubs {
 
     };
 
-    class NegativeFrameAfterShift {
+    class NegativeFrameAfterShift{
 
     };
 
@@ -37,22 +38,15 @@ namespace moviesubs {
         string string1;
         string mos;
     public:
-        SubtitleEndBeforeStart(int i, string sub, string microrsub);
+        SubtitleEndBeforeStart(int i,string sub, string microrsub);
 
-        int LineAt() const;
-
-        string what() const;
+        int LineAt()const;
+        string what()const;
     };
 
-    class InvalidSubtitleLineFormat {
-    };
-
-    class MissingTimeSpecification {
-    };
-
-    class OutOfOrderFrames {
-    };
-
+    class InvalidSubtitleLineFormat {};
+    class MissingTimeSpecification{};
+    class OutOfOrderFrames{};
     bool Check_number(const char &x);
 
 };

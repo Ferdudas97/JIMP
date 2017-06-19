@@ -1,5 +1,5 @@
 //
-// Created by Adrian on 2017-05-31.
+// Created by Radek on 05.06.2017.
 //
 
 #ifndef JIMP_EXERCISES_TEACHERHASH_H

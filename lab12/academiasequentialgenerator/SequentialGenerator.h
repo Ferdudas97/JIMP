@@ -1,5 +1,5 @@
 //
-// Created by Adrian on 2017-06-05.
+// Created by Radek on 31.05.2017.
 //
 
 #ifndef JIMP_EXERCISES_SEQUENTIALGENERATOR_H
@@ -20,7 +20,7 @@ template <class T,class Y> SequentialIdGenerator<T,Y>::SequentialIdGenerator(Y i
 
 }
 template <class T,class Y> SequentialIdGenerator<T,Y>::SequentialIdGenerator(){
-    value=-1;
+value=-1;
 };
 template <class T,class Y> int SequentialIdGenerator<T,Y>::NextValue() {
     int x;

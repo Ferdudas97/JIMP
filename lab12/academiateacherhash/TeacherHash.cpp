@@ -1,9 +1,8 @@
 //
-// Created by Adrian on 2017-05-31.
+// Created by Radek on 05.06.2017.
 //
 
 #include "TeacherHash.h"
-
 namespace academia {
     TeacherId::operator int() const {
         return teacher_id_;

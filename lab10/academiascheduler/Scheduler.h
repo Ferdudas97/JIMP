@@ -1,10 +1,9 @@
 //
-// Created by Adrian on 2017-05-13.
+// Created by Radek on 22.05.2017.
 //
 
 #ifndef JIMP_EXERCISES_SCHEDULER_H
 #define JIMP_EXERCISES_SCHEDULER_H
-
 #include <iostream>
 #include <vector>
 #include <string>
@@ -90,6 +89,5 @@ namespace academia {
         NoViableSolutionFound() : runtime_error("error") {}
     };
 }
-
 
 #endif //JIMP_EXERCISES_SCHEDULER_H

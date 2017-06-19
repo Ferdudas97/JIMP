@@ -1,44 +1,40 @@
 //
-// Created by Adrian on 2017-04-21.
+// Created by Radek on 17.04.2017.
 //
 
 #include "Shape.h"
-#include <iostream>
 
-using namespace std;
-
-void Triangle::Draw() const {
-
-    cout<<"    X"<<endl;
-    cout<<"   X X"<<endl;
-    cout<<"  X   X"<<endl;
-    cout<<" X     X"<<endl;
-    cout<<"X X X X X"<<endl;
+Kolo::Kolo() {
 
 }
-
-
-void Square::Draw() const {
-
-    cout<<"X X X X X X"<<endl;
-    for(int i=0;i<4;i++){
-        cout<<"X         X"<<endl;
+void Kolo::rysuj() {
+    cout<<"O"<<endl;
+}
+Kwadrat::Kwadrat() {}
+void Kwadrat::rysuj() {
+    string tmp="@",tmp1="@",tmp2="@";
+    for (int i = 0; i <4;i++) {
+        tmp+=" ";
+        tmp1+="@";
+        tmp2+="@";
     }
-    cout<<"X X X X X X"<<endl;
+    tmp+="@";
+    tmp1+="@";
+    tmp2+="@";
+    cout<<tmp1<<endl;
+    for (int i = 0; i <4 ;i++) {
+        cout<<tmp<<endl;
+    }
+    cout<<tmp2<<endl;
 
 }
+Trojkat::Trojkat() {}
+void Trojkat::rysuj() {
+    cout << "  # " << endl;
+    cout << " ###" << endl;
+    cout << "#####" << endl;
+}
 
-
-
-
-void Circle::Draw() const {
-
-    cout<<"      X"<<endl;
-    cout<<"    X   X"<<endl;
-    cout<<"  X       X"<<endl;
-    cout<<" X         X"<<endl;
-    cout<<"  X       X"<<endl;
-    cout<<"    X   X"<<endl;
-    cout<<"      X"<<endl;
-    }
-
+void Ksztalt::rysuj() {
+    cout<<"rysuje"<<endl;
+}

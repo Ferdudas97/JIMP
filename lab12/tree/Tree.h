@@ -1,13 +1,15 @@
 //
-// Created by Adrian on 2017-05-25.
+// Created by Radek on 30.05.2017.
 //
 
 #ifndef JIMP_EXERCISES_TREE_H
 #define JIMP_EXERCISES_TREE_H
 
-#include <memory>
-#include <iostream>
 
+
+#include <cstdio>
+#include <iostream>
+#include <memory>
 using namespace std;
 namespace tree {
 
@@ -19,6 +21,12 @@ namespace tree {
         Element value_;
         unique_ptr<Leaf<Element>> left_;
         unique_ptr<Leaf<Element>> right_;
+        bool operator<(const Element &e){
+
+        if (value_ < e)return true;
+        else return false;
+
+    }
     };
 
 
@@ -30,6 +38,21 @@ namespace tree {
         unique_ptr<Leaf<Element>> root_;
         Tree(Element e) :size_{1}, depth_{1},root_{make_unique<Leaf<Element>>(e)}{};
         Tree() {};
+        bool Find(Element e){
+            Leaf<Element> *tmp_wsk = root_.get();
+            while (tmp_wsk!= nullptr) {
+                if (e==tmp_wsk->value_) return true;
+                if (e < tmp_wsk->value_) {
+                    tmp_wsk = tmp_wsk->left_.get();
+                }
+                if (e > tmp_wsk->value_)
+                {
+                    tmp_wsk = tmp_wsk->right_.get();
+                }
+            }
+            return false;
+
+        }
         size_t Size() {
             return size_;
         };
@@ -50,7 +73,7 @@ namespace tree {
                 if (e < tmp_wsk->value_) {
                     if (tmp_wsk->left_ == nullptr) {
                         depth_ = max(tmpdepth, depth_);
-                        tmp_wsk->left_ = make_unique<Leaf<Element>>(e);
+                        tmp_wsk->left_ = std::make_unique<Leaf<Element>>(e);
                         break;
                     } else {
                         tmpdepth++;
@@ -58,7 +81,7 @@ namespace tree {
                     }
                 } else {
                     if (tmp_wsk->right_ == nullptr) {
-                        tmp_wsk->right_ = make_unique<Leaf<Element>>(e);
+                        tmp_wsk->right_ = std::make_unique<Leaf<Element>>(e);
                         depth_ = max(tmpdepth, depth_);
                         break;
                     } else {
@@ -69,7 +92,12 @@ namespace tree {
             }
         };
 
+
+
+
+
+
     };
 }
-#endif //JIMP_EXERCISES_TREE_H
 
+#endif //JIMP_EXERCISES_TREE_H

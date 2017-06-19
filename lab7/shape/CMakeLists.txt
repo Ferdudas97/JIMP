@@ -10,3 +10,4 @@ target_include_directories(libshape PUBLIC .)
 add_executable(shape ${SOURCE_FILES} main.cpp)
 
 target_link_libraries(shape libshape)
+

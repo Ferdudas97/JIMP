@@ -1,25 +1,34 @@
 //
-// Created by Adrian on 2017-04-21.
+// Created by Radek on 17.04.2017.
 //
 
 #ifndef JIMP_EXERCISES_SHAPE_H
 #define JIMP_EXERCISES_SHAPE_H
 
 #include <iostream>
-class Shade{
+using namespace std;
+class Ksztalt{
 public:
-    virtual void Draw(void) const =0;
+    virtual void rysuj();
 };
-class Triangle : public Shade{
+class Kolo:public Ksztalt{
+    double r_,s_;
 public:
-    void Draw(void) const override;
+    Kolo();
+    virtual void rysuj()override ;
 };
-class Square : public Shade{
+class Trojkat:public Ksztalt{
+    double a_,b_,c_;
 public:
-    void Draw(void) const override;
+    Trojkat();
+    Trojkat(double a, double b, double c);
+    virtual void rysuj()override ;
 };
-class Circle : public Shade{
+class Kwadrat:public Ksztalt{
+    double a_;
 public:
-    void Draw(void) const override;
+    Kwadrat();
+    Kwadrat(double a);
+    virtual void rysuj()override ;
 };
 #endif //JIMP_EXERCISES_SHAPE_H

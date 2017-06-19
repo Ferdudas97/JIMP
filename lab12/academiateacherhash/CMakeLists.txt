@@ -10,3 +10,4 @@ target_include_directories(libteacherhash PUBLIC .)
 add_executable(teacherhash ${SOURCE_FILES} main.cpp)
 
 target_link_libraries(teacherhash libteacherhash)
+

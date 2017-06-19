@@ -1,5 +1,5 @@
 //
-// Created by Adrian on 2017-05-30.
+// Created by Radek on 05.06.2017.
 //
 
 #include "TimeRecorder.h"

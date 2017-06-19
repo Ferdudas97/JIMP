@@ -1,16 +1,14 @@
 //
-// Created by Adrian on 2017-04-21.
+// Created by Radek on 17.04.2017.
 //
-
-#include "Shape.h"
-#include <memory>
-#include <iostream>
 #include <list>
-using namespace std;
-int main(){
-    list<Shade*> lista_incjalizacyjna{new Triangle, new Circle, new Square, new Circle, new Square, new Triangle};
-    for (auto n:lista_incjalizacyjna){
-        n->Draw();
-        cout<<endl;
+#include "Shape.h"
+int main()
+{
+    list<Ksztalt*> list1{new Kwadrat,new Kolo, new Trojkat,new Trojkat, new Kolo,new Kwadrat};
+    for(auto &n:list1)
+    {
+        n->rysuj();
     }
+    return  0;
 }
