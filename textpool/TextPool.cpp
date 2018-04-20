@@ -37,7 +37,6 @@ namespace pool {
 
 
 
-    //cout<<"huj";
 }*/
      void swap(TextPool& lhs, TextPool& rhs) noexcept
     {
